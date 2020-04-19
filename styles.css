@@ -1,0 +1,223 @@
+/* start css */
+body {
+  background-color: #522d5b;
+  text-align: center;
+}
+
+.intro {
+  height: 200px;
+  position: relative;
+}
+
+.logo {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  transition: opacity 800ms;
+}
+
+.title {
+  font-family: "bungee";
+  padding: 2% 0;
+}
+
+.paragraph {
+  font-size: 1.35rem;
+}
+
+@media (max-width:800px) {
+  .title {
+    padding: 5% 0;
+  }
+
+  .paragraph {
+    font-size: 1.15rem;
+  }
+}
+
+.text1 {
+  opacity: 0;
+  position: relative;
+  transition: opacity 500ms;
+  color: white;
+  padding: 0 10%;
+  font-family: "Titillium Web";
+}
+
+.small-logo {
+  opacity: 0;
+  position: relative;
+
+  transition: width 800ms, opacity 500ms;
+  width: 100%;
+  height: 100px;
+}
+
+.logo-sm {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 800ms, opacity 500ms;
+}
+
+.overBox {
+  width: 150px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 300ms;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #d7385e;
+  transform: rotate(360deg);
+  transition: transform 300ms, background-color 700ms, height 300ms, border-radius 400ms, width 300ms;
+}
+
+.logo-circle {
+  width: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box.mouseover {
+  box-shadow: 4px 2px 14px 2px #422449;
+  background-color: #cc214a;
+}
+
+/* move 1 */
+.box.move {
+  height: 7px;
+  border-radius: 5%;
+  background-color: white;
+  transform: rotate(0);
+}
+
+.move .logo-circle {
+  visibility: hidden;
+}
+
+/* move 2 */
+.box.move2 {
+  width: 100%;
+  height: 20px;
+  background-color: black;
+  border-radius: 0;
+  transition: transform 300ms, background-color 700ms, height 600ms, border-radius 400ms, width 300ms;
+}
+
+.overBox.move2 {
+  width: 100%;
+  height: 20px;
+}
+
+/* move 3 */
+.box.move3, .overBox.move3 {
+  height: 1050px;
+  position: relative;
+}
+
+@media (max-width:1275px) {
+  .box.move3, .overBox.move3 {
+    height: 950px;
+  }
+}
+
+@media (max-width:800px) {
+  .box.move3, .overBox.move3 {
+    height: 900px;
+  }
+}
+
+
+@media (max-width:650px) {
+  .box.move3, .overBox.move3 {
+    height: 750px;
+  }
+}
+
+
+@media (max-width:450px) {
+  .box.move3, .overBox.move3 {
+    height: 700px;
+  }
+}
+
+.logo.move3 {
+  opacity: 100;
+}
+
+/* move 4 */
+.text1.move4 {
+  opacity: 100;
+}
+
+.small-logo.move4 {
+  opacity: 100;
+}
+
+.logo-sm.finish {
+  width: 150px;
+}
+
+/* air max animation */
+.air-max {
+  width: 100%;
+  max-width: 1100px;
+  padding-bottom: 2%;
+}
+
+.air-max2 {
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+}
+
+/* shoes */
+.shoe-1 {
+  background-color: #7fa0bf;
+  color: white;
+  height: 600px;
+  position: relative;
+  opacity: 0;
+  transition: opacity 500ms, background-color 800ms;
+}
+
+.shoe-1.move3 {
+  opacity: 100;
+}
+
+.shoe-1.sum-on{
+  background-color: #d7385e;
+}
+
+.shoe {
+  height: 300px;
+  position: relative;
+  top: 0;
+  transform: rotate(360deg);
+  transition: transform 800ms;
+}
+
+
+.shoe.sum-on {
+  transform: rotate(0);
+}
+
+
+
+.btn{
+  font-family: bungee;
+  z-index: 1;
+  position: relative;
+}
